@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+    body {
+      background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+      width: 100%;
+      -webkit-animation: slidein 100s;
+      animation: slidein 100s;
+
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+    }
+
+    @-webkit-keyframes slidein {
+      from {
+        background-position: top;
+        background-size: 3000px;
+      }
+
+      to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+      }
+    }
+
+    @keyframes slidein {
+      from {
+        background-position: top;
+        background-size: 3000px;
+      }
+
+      to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+      }
+
+    }
+
+    .card {
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.13);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(143, 139, 139, 0.1);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.67);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--heros section started-->
+  <div class="card-group container-fluid mt-5 mb-3">
+
+    <div class="card me-2 ms-2">
+      <img src="https://wallpapercave.com/wp/wp4351310.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card  me-2 ms-2" style="border-left:1px solid rgba(255, 255, 255, 0.67);">
+      <img src="https://i.pinimg.com/originals/ea/40/fd/ea40fd13fa7d46618c5567146f07ba41.png" class="card-img-top"
+        alt="..." style="margin-top: 35px;">
+
+
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card  me-2 ms-2" style="border-left:1px solid rgba(255, 255, 255, 0.67);">
+      <img src="https://i.pinimg.com/originals/be/39/bf/be39bf6ce491d3840104810a7f055c01.png" class="card-img-top"
+        alt="..." style="margin-top: 9px;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--2nd-->
+  <div class="card-group container-fluid mb-3">
+
+    <div class="card me-2 ms-2">
+      <img src="https://i.pinimg.com/originals/7c/48/6d/7c486d005cad46c1183efaa9249478cb.png" class="card-img-top"
+        alt="..." style="height: 50%;margin-top: 35px;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card me-2 ms-2 " style="border-left:1px solid rgba(255, 255, 255, 0.67);">
+      <img
+        src="https://lh5.googleusercontent.com/-8m0Ik25wfKI/UN1-k0WcWII/AAAAAAAAAV4/8HNYXf-fSHk/s456/kolkata-knight-riders.png"
+        class="card-img-top" alt="..." style="height: 65%; margin-top: 35px;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card me-2 ms-2" style="border-left:1px solid rgba(255, 255, 255, 0.67);">
+      <img
+        src="https://th.bing.com/th/id/R.f6d5188d7538706fbea7bc6c2c5ce9b0?rik=1D1Ca6HlO9CRVQ&riu=http%3a%2f%2fassets.stickpng.com%2fthumbs%2f627d0ed58a632ca996477ea3.png&ehk=2bqArbalbXkXcSZYKHzn2IlC5cknP6G%2fy1rJKmW02eY%3d&risl=&pid=ImgRaw&r=0"
+        class="card-img-top" alt="..." style="margin-top: 40px;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--3rd-->
+  <div class="card-group container-fluid mb-3">
+
+    <div class="card me-2 ms-2">
+      <img
+        src="https://th.bing.com/th/id/R.5d53b754605672b3da09b13cfc6af90f?rik=JQWnet8h%2fdhzuw&riu=http%3a%2f%2ffantasyarena.in%2fimages%2f1645504341_punjab-kings-new-logo-1203x1536.png&ehk=s0AqAzbRl5s72ZGNrvBSieGnbjpcoFPYPYjoN7%2fWVH8%3d&risl=&pid=ImgRaw&r=0"
+        class="card-img-top" alt="..." style="height: 75%; width:75% ; display: block; margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card me-2 ms-2" style="border-left:1px solid rgba(255, 255, 255, 0.67);">
+      <img src="https://i.postimg.cc/RVrRXZrK/logo-of-gt.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card me-2 ms-2" style="border-left:1px solid rgba(255, 255, 255, 0.67);">
+      <img src="https://www.delhicapitals.in/static-assets/images/cssimages/logo.png" class="card-img-top" alt="..."
+        style="margin-top: 20px;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--4th-->
+  <div class="card-group container mb-5 col-md-4">
+
+
+
+    <div class="card me-2 ms-2 " style="border-left:1px solid rgba(255, 255, 255, 0.67);">
+      <img src="https://possible11.s3.ap-south-1.amazonaws.com/ipl/2022/lsg.png" class="card-img-top" alt="..."
+        style="margin-top:45px;margin-bottom: 45px;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Actions
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="#">Action 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>
